@@ -2,15 +2,16 @@
   height: 27rem;
   width: 48rem;
   display: flex;
-  flex-direction: row; /* layout orizzontale */
+  flex-direction: row;
   box-shadow: #716D7C 4px 4px 4px;
   background-color: #FCF7FC;
   color: black;
   overflow: hidden;
   border-radius: 8px;
+  margin-top: 40px;
+  margin-left: 2rem;
 }
 
-/* Immagine a sinistra */
 .left {
   flex: 1;
   display: flex;
