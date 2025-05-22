@@ -1,3 +1,8 @@
 body {
   background-color: #AFA4CE;
 }
+
+.blank {
+  margin-top: 100px;
+  height: 10px;
+}
