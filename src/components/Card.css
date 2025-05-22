@@ -2,14 +2,30 @@
   height: 27rem;
   width: 48rem;
   display: flex;
-  flex-direction: row;
   box-shadow: #716D7C 4px 4px 4px;
   background-color: #FCF7FC;
   color: black;
   overflow: hidden;
   border-radius: 8px;
-  margin-top: 40px;
-  margin-left: 2rem;
+}
+
+.card--odd {
+  margin-right: auto;
+  margin-left: 4rem;
+}
+
+.card--even {
+  flex-direction: row-reverse;
+  margin-left: auto;
+  margin-right: 4rem;
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem; 
+  padding: 2rem 0;
 }
 
 .left {
@@ -25,23 +41,10 @@
   object-fit: cover;
 }
 
-
 .right {
   flex: 1;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.right h1 {
-  text-align: center;
-}
-
-.right h4 {
-  text-align: left;
-}
-
-.right p {
-  text-align: left;
 }

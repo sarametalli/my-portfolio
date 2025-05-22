@@ -1,16 +1,12 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import Card from './components/Card';
+import Home from './components/Home';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <div className='blank'>
-      </div>
-      <Card />
-      <Card />
-      <Card />
+      <Home />
     </div>
   );
 }

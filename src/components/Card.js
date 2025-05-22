@@ -1,18 +1,17 @@
 import './Card.css';
-import placeholder from '../ecommerce.png';
 
-function Card() {
+function Card({ index, image, title, category, description }) {
+  const isEven = index % 2 === 0;
+
   return (
-    <div className='card'>
-      <div className='left'>
-        <img src={placeholder} alt="placeholder" />
+    <div className={`card ${isEven ? 'card--even' : 'card--odd'}`}>
+      <div className="left">
+        <img src={image} alt={title} />
       </div>
-      <div className='right'>
-        <h1>Card name</h1>
-        <h4>Category</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut semper, lorem vitae mollis mollis, ante neque scelerisque mi, nec venenatis justo leo a enim. Donec elementum nulla lorem, vitae lobortis.
-        </p>
+      <div className="right">
+        <h1>{title}</h1>
+        <h4>{category}</h4>
+        <p>{description}</p>
       </div>
     </div>
   );
