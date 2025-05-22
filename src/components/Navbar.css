@@ -22,6 +22,7 @@
 
 .navbar__links {
     display: flex;
+    height: 100%;
     align-items: center;
     margin-left: auto; 
     margin-right: 5rem;
@@ -30,5 +31,14 @@
 
 .navbar__links > div {
   margin-left: 5rem;
+ 
   cursor: pointer; /* aggiungere il bottone */
+}
+
+
+.navbar__links > div:hover {
+  height: 100%;
+  width: 100%;
+    background-color: #E7E4F0;
+    color: #5B4B8B;
 }
