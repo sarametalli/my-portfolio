@@ -11,10 +11,24 @@
     display: flex;  
     align-items: center;
     z-index: 1000;
+    font-family: 'Open Sans', sans-serif;
   }
   
   .navbar__logo {
     height: 100%;
     margin-left: 5rem; 
+    cursor: pointer; /* aggiungere il bottone */
   }
-  
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: 5rem;
+    color: #E7E4F0;
+}
+
+.navbar__links > div {
+  margin-left: 5rem;
+  cursor: pointer; /* aggiungere il bottone */
+}
