@@ -3,7 +3,7 @@ import ecommerce from '../ecommerce.png';
 
 function Home() {
   return (
-    <div className='container'>
+    <div className='container' >
       <Card
         index={1} // todo: pass the index automatically
         image={ecommerce}
