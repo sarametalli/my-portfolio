@@ -1,6 +1,5 @@
 import Card from './Card';
 import ecommerce from '../ecommerce.png';
-import { Route } from 'react-router-dom';
 
 function Home() {
   return (
@@ -12,8 +11,8 @@ function Home() {
         title="E-commerce"
         category="Frontend + Backend"
         description="Un sito di e-commerce responsive con pannello admin, pagamento sicuro, e carrello persistente."
-        onClick={() => { Route.push('/project') }} // todo: fix this
       />
+
       <Card
         index={2}
         image={ecommerce}
