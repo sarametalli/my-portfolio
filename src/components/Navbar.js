@@ -3,8 +3,10 @@ import logo from '../logo.png';
 import { useNavigate } from 'react-router-dom';
 import Snackbar from '../components/Snackbar';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
   const [snackbarVisible, setSnackbarVisible] = useState(false);
   const navigate = useNavigate();
   const handleClick = (page) => {
@@ -21,9 +23,11 @@ function Navbar() {
       <img src={logo} alt="Logo" className="navbar__logo" onClick={() => handleClick('/')}
  />
       <div className='navbar__links'>
-        <div onClick={() => {handleClick("/")}}><p>HOME</p></div>
-        <div onClick={handleComingSoon}><p>ABOUT ME</p></div>
-        <div onClick={handleComingSoon}><p>CONTACTS</p></div>
+<div className={`${(location.pathname === '/' || location.pathname === '/my-portfolio') ? 'active' : 'inactive'}`} onClick={() => handleClick("/")}>
+  <p>HOME</p>
+</div>
+        <div className='inactive' onClick={handleComingSoon}><p>ABOUT ME</p></div>
+        <div className='inactive' onClick={handleComingSoon}><p>CONTACTS</p></div>
       </div>
     </div>
     <Snackbar message="Coming soon!" visible={snackbarVisible} />

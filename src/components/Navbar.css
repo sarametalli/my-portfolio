@@ -41,7 +41,11 @@
 }
 
 
-.navbar__links > div:hover {
+.navbar__links > .inactive:hover {
     background-color: #E7E4F0;
     color: #5B4B8B;
+}
+
+.active {
+  background-color: #AFA4CE;
 }
