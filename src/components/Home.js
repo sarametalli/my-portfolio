@@ -3,6 +3,7 @@ import ecommerce from '../ecommerce.png';
 
 function Home() {
   return (
+    // todo: cards are dynamic, so we should use a map to render them
     <div className='container' >
       <Card
         index={1} // todo: pass the index automatically
