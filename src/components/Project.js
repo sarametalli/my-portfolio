@@ -11,6 +11,7 @@ function Project() {
 
   return (
     <>
+  <div className="project">
     <div className="project-container">
       <h1>{title}</h1>
       <div className="project-image">
@@ -19,13 +20,13 @@ function Project() {
         ))}
       </div>
       <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">
-        Provalo qui →
+        PROVALO QUI
       </a>
-      </div>
-      
-      <p>{description}</p>
-    </>
-  );
+    </div>
+  </div>
+  <p>{description}</p></>
+);
+
 }
 
 export default Project;
