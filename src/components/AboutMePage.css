@@ -1,8 +1,14 @@
-/* .container{
-
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 20em;
+    width: 100%;
+    background-color: rgba(252, 247, 252, 0.4);
+    margin-bottom: 5em;
+    margin-top: 10em;
 }
 
 img {
-
-} */
-
+    height: 90%;
+    width: auto;
+} 

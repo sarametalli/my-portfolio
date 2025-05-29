@@ -7,11 +7,16 @@ function AboutMePage() {
         <div className="container">
             <img src={picture} alt="Girl smiling" />
             <div className="info">
-            <h1>Nome e cognome</h1>
-            <h2>Qualifica</h2>
-            <h3>Città</h3>
-            <h4>Telefono</h4>
-            <h4>Email</h4>
+            <div className='top'>
+                <h1>Nome e cognome</h1>
+                <h4>Qualifica</h4>
+                <h4>Città</h4>
+            </div>
+            <div className='bottom'>
+                <h3>Telefono</h3>
+                <h2>Email</h2>
+            </div>
+            
             </div>
         </div>
         <div className='about-me'>
